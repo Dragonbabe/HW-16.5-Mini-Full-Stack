@@ -1,0 +1,30 @@
+{
+  "name": "hw-16.5-mini-full-stack",
+  "version": "1.0.0",
+  "description": "full-stack practice",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "run": "^1.4.0",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dragonbabe/HW-16.5-Mini-Full-Stack.git"
+  },
+  "keywords": [
+    "mini-hw"
+  ],
+  "author": "Esther Walker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dragonbabe/HW-16.5-Mini-Full-Stack/issues"
+  },
+  "homepage": "https://github.com/Dragonbabe/HW-16.5-Mini-Full-Stack#readme"
+}
