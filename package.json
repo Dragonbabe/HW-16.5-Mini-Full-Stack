@@ -5,17 +5,20 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
     "nodemon": "^2.0.2",
     "run": "^1.4.0",
-    "sequelize": "^5.21.5"
+    "sequelize": "^5.21.5",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "sequelize-cli": "^5.5.1"
   },
   "scripts": {
     "test": "test",
-    "start": "node server.js",
-    "watch": "node server.js"
+    "start": "nodemon server.js",
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",

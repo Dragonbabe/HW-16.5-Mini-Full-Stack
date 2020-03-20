@@ -1,9 +1,11 @@
 const express = require('express');
 
+const db = require(`./models`);
+
 const apiRoutes = require(`./routes/api-routes.js`);
 
 const htmlRoutes = require(`./routes/html-routes.js`);
-const db = require(`models`);
+
 
 const PORT = process.env.PORT || 3000;
 
@@ -21,5 +23,7 @@ app.get('/myhtml', (req, res) => {
     res.send("<h1>I'm HTML!</h1>");
 });
 
+db.sequelize.sync({force: true}).then(() => {
 app.listen(PORT, () => console.log('Hello world!'));
 
+});
