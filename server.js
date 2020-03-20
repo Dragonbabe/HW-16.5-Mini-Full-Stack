@@ -2,7 +2,8 @@ const express = require('express');
 
 const apiRoutes = require(`./routes/api-routes.js`);
 
-const htmlRoutes = require(`./routes/html-routes.js`)
+const htmlRoutes = require(`./routes/html-routes.js`);
+const db = require(`models`);
 
 const PORT = process.env.PORT || 3000;
 
@@ -22,6 +23,3 @@ app.get('/myhtml', (req, res) => {
 
 app.listen(PORT, () => console.log('Hello world!'));
 
-module.exports = app => {
-
-}
