@@ -2,16 +2,18 @@
 <ul>
     {{#each todos}}
     <li>{{this.text}}</li>
+    <div class="form-group">
+        <label form="todo">Todo:</label>
+        <textarea type="text" class="form-control" id="title"
+        value="Add some info or notes about your todo">{{text}}</textarea>
+    </div>
+
+<input type="checkbox" aria-label="Checkbox for following text input">You completed this todo!</input>
+    
+    <button type="button" class="btn btn-success">Delete todo upon completion</button>
+    {{this.id}}
     {{/each}}
 </ul>
 
 
-    <div class="form-group">
-        <label form="todo">Todo:</label>
-        <textarea type="text" class="form-control" id="title"
-        value="Add some info or notes about your todo"></textarea>
-    </div>
-
-<input type="checkbox" aria-label="Checkbox for following text input">
     
-    <button type="button" class="btn btn-success"></button>

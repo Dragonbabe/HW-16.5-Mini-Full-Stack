@@ -19,4 +19,9 @@ module.exports = app =>{
     app.get(`/myhtml`, (req, res) => {
         res.send(`<h1> I'm HTML!</h1>`);
     });
+    app.delete(`view-todos/:id`, (req, res) => {
+        connection.query[req.params.id];
+        
+    });
+
 };
