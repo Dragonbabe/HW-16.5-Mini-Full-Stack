@@ -4,7 +4,7 @@
   "description": "full-stack practice",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "handlebars-form-helper": "^1.0.4",
     "handlebars-form-helpers": "^0.1.4",
